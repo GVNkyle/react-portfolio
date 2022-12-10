@@ -1,0 +1,49 @@
+.logo-container {
+    z-index: 0;
+    width: 600px;
+    height: 809px;
+    // opacity: 0;
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+
+    svg {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+    }
+
+    rect {
+        animation: scat 5s infinite alternate
+    }
+}
+
+.svg-container {
+    stroke: #4d4d4e;
+    stroke-width: 10;
+}
+
+#Ebene_1{
+    fill: #fff;
+}
+
+@keyframes scat {
+    0% {
+        transform: scaleY(1) rotateZ(0);
+    }
+
+    33% {
+        transform: scaleY(0.33) rotateZ(30deg);
+    }
+
+    66% {
+        transform: scaleY(0.66) rotateZ(-30deg);
+    }
+
+    100% {
+        transform: scaleY(0.1) rotateZ(0);
+    }
+}
